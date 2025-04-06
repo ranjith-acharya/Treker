@@ -104,4 +104,43 @@ npm run dev
 #### Booking is stored in DB
 #### A confirmation email is sent to the provided email
 
+### 📁 Folder Structure
 
+```bash
+.
+├── config/               
+│   └── db.js
+├── controllers/            
+│   └── userController.js
+├── middlewares/              
+│   └── authMiddleware.js              
+├── models/             
+│   └── Booking.js            
+│   └── index.js            
+│   └── User.js
+├── node_modules/       # this will be created when you run npm install command 
+├── public/            
+│   └── css/
+│   └── fonts/
+│   └── images/
+│   └── js/         
+│   ├── index.html
+│   ├── packages.html
+│   ├── checkout.html
+│   ├── # & other html files
+├── routes/            
+│   └── bookings.js     
+│   └── pay.js     
+│   └── razorpay.js     
+│   └── userRoutes.js
+├── utils/          
+│   └── mailer.js  
+├── views/
+├── .env
+├── .gitignore
+├── app.js
+├── package-lock.json
+├── package.json
+├── README.md
+└── server.js
+```
