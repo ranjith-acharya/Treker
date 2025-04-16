@@ -28,6 +28,8 @@ app.use('/api/bookings', bookingRoutes);
 const razorpayRoutes = require('./routes/razorpay');
 app.use('/api', razorpayRoutes);
 
+app.use('/forgot-password', require('./routes/forgotPassword'));
+
 // Static files (your template)
 app.use(express.static(path.join(__dirname, 'public')));
 
